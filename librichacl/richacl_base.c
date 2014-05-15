@@ -29,6 +29,18 @@
 const char *richace_owner_who	 = "OWNER@";
 const char *richace_group_who	 = "GROUP@";
 const char *richace_everyone_who = "EVERYONE@";
+const char *richace_interactive_who = "INTERACTIVE@";
+const char *richace_network_who = "NETWORK@";
+const char *richace_dialup_who = "DIALUP@";
+const char *richace_batch_who = "BATCH@";
+const char *richace_anonymous_who = "ANONYMOUS@";
+const char *richace_authenticated_who = "AUTHENTICATED@";
+const char *richace_service_who = "SERVICE@";
+const char *richace_administrator_who = "ADMINISTRATOR@";
+const char *richace_adminusers_who = "ADMINUSERS@";
+const char *richace_nobody_who = "NOBODY@";
+const char *richace_unknown_who = "UNKNOWN@";
+
 
 int richace_is_same_identifier(const struct richace *a, const struct richace *b)
 {
@@ -224,6 +236,28 @@ int richace_set_who(struct richace *ace, const char *who)
 		id = ACE_GROUP_ID;
 	else if (!strcmp(who, richace_everyone_who))
 		id = ACE_EVERYONE_ID;
+	else if (!strcmp(who, richace_interactive_who))
+		id = ACE_INTERACTIVE_ID;
+	else if (!strcmp(who, richace_network_who))
+		id = ACE_NETWORK_ID;
+	else if (!strcmp(who, richace_dialup_who))
+		id = ACE_DIALUP_ID;
+	else if (!strcmp(who, richace_batch_who))
+		id = ACE_BATCH_ID;
+	else if (!strcmp(who, richace_anonymous_who))
+		id = ACE_ANONYMOUS_ID;
+	else if (!strcmp(who, richace_authenticated_who))
+		id = ACE_AUTHENTICATED_ID;
+	else if (!strcmp(who, richace_service_who))
+		id = ACE_SERVICE_ID;
+	else if (!strcmp(who, richace_administrator_who))
+		id = ACE_ADMINISTRATOR_ID;
+	else if (!strcmp(who, richace_adminusers_who))
+		id = ACE_ADMINUSERS_ID;
+	else if (!strcmp(who, richace_nobody_who))
+		id = ACE_NOBODY_ID;
+	else if (!strcmp(who, richace_unknown_who))
+		id = ACE_UNKNOWN_ID;
 	else
 		return -1;
 

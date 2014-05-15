@@ -103,6 +103,17 @@
 #define ACE_OWNER_ID		130
 #define ACE_GROUP_ID		131
 #define ACE_EVERYONE_ID		110
+#define ACE_INTERACTIVE_ID      132
+#define ACE_NETWORK_ID          133
+#define ACE_DIALUP_ID           134
+#define ACE_BATCH_ID            135
+#define ACE_ANONYMOUS_ID        136
+#define ACE_AUTHENTICATED_ID    137
+#define ACE_SERVICE_ID          138
+#define ACE_ADMINISTRATOR_ID    139
+#define ACE_ADMINUSERS_ID       140
+#define ACE_NOBODY_ID           141
+#define ACE_UNKNOWN_ID          142
 
 struct richace {
 	unsigned short	e_type;
