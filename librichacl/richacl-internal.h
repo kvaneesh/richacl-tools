@@ -88,5 +88,16 @@ richace_clear_inheritance_flags(struct richace *ace)
 extern const char *richace_owner_who;
 extern const char *richace_group_who;
 extern const char *richace_everyone_who;
+extern const char *richace_interactive_who;
+extern const char *richace_network_who;
+extern const char *richace_dialup_who;
+extern const char *richace_batch_who;
+extern const char *richace_anonymous_who;
+extern const char *richace_authenticated_who;
+extern const char *richace_service_who;
+extern const char *richace_administrator_who;
+extern const char *richace_adminusers_who;
+extern const char *richace_nobody_who;
+extern const char *richace_unknown_who;
 
 #endif  /* __RICHACL_INTERNAL_H */

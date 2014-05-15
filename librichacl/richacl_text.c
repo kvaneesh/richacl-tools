@@ -324,6 +324,39 @@ static void write_identifier(struct string_buffer *buffer,
 		case ACE_EVERYONE_ID:
 		    id = richace_everyone_who;
 		    break;
+		case ACE_INTERACTIVE_ID:
+		    id = richace_interactive_who;
+		    break;
+		case ACE_NETWORK_ID:
+		    id = richace_network_who;
+		    break;
+		case ACE_DIALUP_ID:
+		    id = richace_dialup_who;
+		    break;
+		case ACE_BATCH_ID:
+		    id = richace_batch_who;
+		    break;
+		case ACE_ANONYMOUS_ID:
+		    id = richace_anonymous_who;
+		    break;
+		case ACE_AUTHENTICATED_ID:
+		    id = richace_authenticated_who;
+		    break;
+		case ACE_SERVICE_ID:
+		    id = richace_service_who;
+		    break;
+		case ACE_ADMINISTRATOR_ID:
+		    id = richace_administrator_who;
+		    break;
+		case ACE_ADMINUSERS_ID:
+		    id = richace_adminusers_who;
+		    break;
+		case ACE_NOBODY_ID:
+		    id = richace_nobody_who;
+		    break;
+		case ACE_UNKNOWN_ID:
+		default:
+		  id = richace_unknown_who;
 		}
 
 		dup = alloca(strlen(id) + 1);
